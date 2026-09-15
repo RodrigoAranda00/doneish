@@ -1,5 +1,5 @@
 # Done-ish
-
+<img width="1640" height="664" alt="doneish cover" src="https://github.com/user-attachments/assets/9d55e6ae-239d-4b57-81c3-e98d595a88d9" />
 A minimalist to-do / lists / notes app for Android, built with Expo and React Native. Done-ish was made for personal use, with the specific focus on being ADHD-friendly. It is purposely designed to have lower mental load than most complicated productivity apps, thus it uses no accounts, cloud sync, or unnecessary features. It uses high-contrast, minimalist UI inspired by apps like Notion and Todoist.
 
 This is a portfolio project, built incrementally, feature by feature. It still isn't 100% finished, but completely functional.
@@ -20,16 +20,6 @@ Chores and calendar/reminders views are planned but not yet implemented.
 - `@react-native-async-storage/async-storage` for local, on-device persistence
 - [Zod](https://zod.dev) for validating data read from storage
 - TypeScript, strict mode
-
-## Data & Storage
-
-All data is stored locally on-device — there is no backend, cloud sync, or user account. Each feature persists its own data through `AsyncStorage`, wrapped by a `StorageManager` (`src/store/StorageManager.ts`) that:
-
-- Tags stored data with a `schemaVersion` integer.
-- Runs versioned migrations (`src/store/migrations.ts`) on startup to bring older data up to the current shape.
-- Validates data with Zod schemas on read, so a corrupted or stale record can't crash the app.
-
-Domain objects (`Task`, list/notes/supermarket items, etc.) use `string` IDs (nanoid) and store dates as ISO 8601 strings.
 
 ## Getting Started
 
