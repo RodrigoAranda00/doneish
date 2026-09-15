@@ -1,8 +1,8 @@
-# TaskOrganizer
+# Done-ish
 
-A minimalist to-do / lists / notes app for Android, built with Expo and React Native. TaskOrganizer strips away the noise and mental load that comes with complicated productivity apps — no accounts, no cloud sync, no clutter — with a specific focus on being usable by people with ADHD.
+A minimalist to-do / lists / notes app for Android, built with Expo and React Native. Done-ish was made for personal use, with the specific focus on being ADHD-friendly. It is purposely designed to have lower mental load than most complicated productivity apps, thus it uses no accounts, cloud sync, or unnecessary features. It uses high-contrast, minimalist UI inspired by apps like Notion and Todoist.
 
-This is a personal portfolio project, built incrementally, feature by feature.
+This is a portfolio project, built incrementally, feature by feature. It still isn't 100% finished, but completely functional.
 
 ## Features
 
@@ -50,20 +50,6 @@ Domain objects (`Task`, list/notes/supermarket items, etc.) use `string` IDs (na
    ```bash
    npm run android
    ```
-
-## Project Structure
-
-```
-app/                  Expo Router screens (file-based routing)
-src/features/         Feature-specific components, hooks, and logic (lists, notes, supermarket)
-src/components/       Shared UI primitives (Button, IconButton, ScreenContainer, ...)
-src/store/            Persistence layer: StorageManager, migrations, shared types
-theme/                Design tokens: colors, spacing, typography, border radius
-```
-
-## Design
-
-High-contrast, black-on-white, minimalist UI inspired by apps like Notion and Todoist. Colors are centralized as design tokens in `theme/`, built around Eigengrau (`#16161d`) for text/shapes and Anti-Flash White (`#F1F1F1`) for backgrounds.
 
 ## License
 
